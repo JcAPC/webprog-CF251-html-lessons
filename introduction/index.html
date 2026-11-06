@@ -1,29 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Jesmark Presbitero</title>
+  <title>Jesmark Presbitero - Introduction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 { color: #2c3e50; }
+    h2 { color: #2980b9; border-bottom: 2px solid #2980b9; padding-bottom: 5px; }
+    .profile-img {
+      width: 200px;
+      border-radius: 10px;
+      display: block;
+      margin: 10px 0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: white;
+    }
+    th {
+      background-color: #2980b9;
+      color: white;
+      padding: 10px;
+      text-align: left;
+    }
+    td { padding: 10px; border: 1px solid #ddd; }
+    tr:nth-child(even) { background-color: #f2f2f2; }
+    .block-section {
+      background-color: white;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      border-left: 4px solid #2980b9;
+    }
+    #goals {
+      background-color: #eaf4fb;
+      padding: 15px;
+      border-radius: 8px;
+      font-style: italic;
+    }
+    .highlight { color: #2980b9; font-weight: bold; }
+    a { color: #2980b9; }
+    a:hover { color: #e74c3c; }
+  </style>
 </head>
 <body>
 
   <h1>Personal Profile Web Page</h1>
-  <img src="IMG_0726.JPG" alt="Jesmark David C. Presbitero">
 
-  <h2>About Me (Jesmark David C. Presbitero)</h2>
+  <img src="IMG_0726.JPG" alt="Jesmark David C. Presbitero" class="profile-img">
 
-  <p>22 | Email: jcpresbitero@student.apc.edu.ph | IG: @jyc_mrk</p>
+  <div id="about" class="block-section">
+    <h2>About Me</h2>
+    <p>
+      <span class="highlight">Name:</span> Jesmark David C. Presbitero<br>
+      <span class="highlight">Age:</span> 22<br>
+      <span class="highlight">Email:</span> jcpresbitero@student.apc.edu.ph<br>
+      <span class="highlight">Instagram:</span>
+      <a href="https://www.instagram.com/jyc_mrk/" target="_blank">@jyc_mrk</a>
+    </p>
+  </div>
 
-  <h3>Education / Achievements</h3>
-  <p>Course: BSCS-SS at Asia Pacific College</p>
+  <div id="education" class="block-section">
+    <h2>Education</h2>
+    <table>
+      <tr>
+        <th>Field</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>School</td>
+        <td><a href="https://www.apc.edu.ph" target="_blank">Asia Pacific College</a>, Makati</td>
+      </tr>
+      <tr>
+        <td>Course</td>
+        <td>BSCS-SS (Bachelor of Science in Computer Science)</td>
+      </tr>
+      <tr>
+        <td>IT Experience</td>
+        <td>Web Developer — Project: E-ksena</td>
+      </tr>
+    </table>
+  </div>
 
-  <h3>IT Experience</h3>
-  <p>Web Developer | Project: E-ksena</p>
+  <div id="hobbies" class="block-section">
+    <h2>Hobbies &amp; Interests</h2>
+    <ul>
+      <li>Driving</li>
+      <li>Gaming</li>
+      <li>Badminton</li>
+      <li>Cinematography</li>
+    </ul>
+  </div>
 
-  <h3>Hobbies & Interests</h3>
-  <p>Driving and Gaming</p>
+  <div id="skills" class="block-section">
+    <h2>Skills</h2>
+    <ol>
+      <li>HTML &amp; CSS</li>
+      <li>Web Development</li>
+      <li>Video Production</li>
+    </ol>
+  </div>
 
-  <h3>Goals / Dreams</h3>
-  <p>Make my parents proud</p>
+  <div id="goals">
+    <h2>Goals / Dreams</h2>
+    <p>"Make my parents proud."</p>
+  </div>
 
+  <div id="links" class="block-section">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://www.instagram.com/jyc_mrk/" target="_blank">Instagram</a></li>
+      <li><a href="https://www.apc.edu.ph" target="_blank">Asia Pacific College</a></li>
+      <li><a href="https://validator.w3.org/" target="_blank">W3C Validator</a></li>
+      <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+    </ul>
+  </div>
 
 </body>
 </html>
