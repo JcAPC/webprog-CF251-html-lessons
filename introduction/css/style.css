@@ -1,74 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  max-width: 820px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f5f5;
+  padding: 30px 20px;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
 }
 
 h1 {
-  color: #2c3e50;
+  color: #1a2f45;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
 h2 {
-  color: #2980b9;
-  border-bottom: 2px solid #2980b9;
-  padding-bottom: 5px;
+  color: #2471a3;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #2471a3;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 8px;
 }
 
 .profile-img {
-  width: 200px;
-  border-radius: 10px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
   display: block;
-  margin: 10px 0;
+  margin: 0 0 24px 0;
+  border: 3px solid #2471a3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.block-section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 16px 0;
+  border-radius: 10px;
+  border-left: 4px solid #2471a3;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+#goals {
+  background-color: #eaf4fb;
+  padding: 20px;
+  margin: 16px 0;
+  border-radius: 10px;
+  font-style: italic;
+  color: #1a2f45;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+#goals p {
+  font-size: 1.05rem;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
-  background-color: white;
+  background-color: #ffffff;
+  font-size: 0.95rem;
 }
 
 th {
-  background-color: #2980b9;
-  color: white;
-  padding: 10px;
+  background-color: #2471a3;
+  color: #ffffff;
+  padding: 10px 14px;
   text-align: left;
+  font-weight: 600;
 }
 
 td {
-  padding: 10px;
-  border: 1px solid #ddd;
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  color: #444;
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
+tr:nth-child(even) td {
+  background-color: #f7fafc;
 }
 
-.block-section {
-  background-color: white;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 8px;
-  border-left: 4px solid #2980b9;
+ul, ol {
+  padding-left: 20px;
 }
 
-#goals {
-  background-color: #eaf4fb;
-  padding: 15px;
-  border-radius: 8px;
-  font-style: italic;
-}
-
-.highlight {
-  color: #2980b9;
-  font-weight: bold;
+ul li, ol li {
+  margin: 6px 0;
+  color: #444;
 }
 
 a {
-  color: #2980b9;
+  color: #2471a3;
+  text-decoration: none;
 }
 
 a:hover {
   color: #e74c3c;
+  text-decoration: underline;
+}
+
+.highlight {
+  color: #2471a3;
+  font-weight: 600;
 }
