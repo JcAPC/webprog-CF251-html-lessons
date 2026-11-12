@@ -74,34 +74,6 @@ p {
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
 }
 
-.about-flex {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  flex-wrap: wrap;
-}
-
-.about-flex .profile-img {
-  margin: 0;
-  flex-shrink: 0;
-}
-
-.about-text {
-  flex: 1 1 280px;
-}
-
-.row {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin: 18px 0;
-}
-
-.row .block-section {
-  flex: 1 1 300px;
-  margin: 0;
-}
-
 #goals {
   background: linear-gradient(135deg, #eaf4fb, #dbeef9);
   padding: 24px;
