@@ -3,9 +3,10 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 120px auto;
   gap: 4px;
-  background-color: DodgerBlue;
+  background: linear-gradient(135deg, #1e90ff, #2471a3);
   padding: 4px;
-  margin-bottom: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(30, 144, 255, 0.25);
 }
 
 .grid-item {
@@ -13,12 +14,19 @@
   font-size: 30px;
   text-align: center;
   padding: 4px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.grid-item:hover {
+  background-color: #ffffff;
+  color: #2471a3;
 }
 
 .page-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 20px;
   grid-template-areas:
     "about     about"
     "education education"
