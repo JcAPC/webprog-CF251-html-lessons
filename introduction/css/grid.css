@@ -1,0 +1,36 @@
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  grid-template-areas:
+    "about     about"
+    "education education"
+    "hobbies   skills"
+    "goals     goals"
+    "links     links";
+}
+
+#about     { grid-area: about; }
+#education { grid-area: education; }
+#hobbies   { grid-area: hobbies; }
+#skills    { grid-area: skills; }
+#goals     { grid-area: goals; }
+#links     { grid-area: links; }
+
+.page-grid > * {
+  margin: 0;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about"
+      "education"
+      "hobbies"
+      "skills"
+      "goals"
+      "links";
+  }
+}
