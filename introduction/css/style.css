@@ -195,10 +195,3 @@ a:hover {
   color: var(--blue);
   font-weight: 600;
 }
-
-footer {
-  text-align: center;
-  color: #718096;
-  font-size: 0.85rem;
-  margin-top: 36px;
-}
